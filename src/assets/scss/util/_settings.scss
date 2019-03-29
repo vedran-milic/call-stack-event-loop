@@ -1,0 +1,18 @@
+// 1. Colors
+$primary-color: #2c3e50;
+$highlight-color: #42b983;
+$white: #fff;
+$black: #000;
+
+// 2. Media queries
+$medium-width: 64em;
+
+$query: (
+  medium: only screen and (min-width: #{$medium-width})
+);
+
+// 3. Nav vars
+$nav-width: 280px;
+
+// 4. Content vars
+$content-width: 32em;

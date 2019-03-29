@@ -1,0 +1,92 @@
+html,
+body {
+  font-size: 100%;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $primary-color;
+  line-height: 1.5;
+}
+
+p {
+  margin: 1.5em 0;
+}
+
+ul {
+  list-style: inside disc;
+  margin: 1.5em 0;
+}
+
+ol {
+  list-style: inside decimal;
+  margin: 1.5em 0;
+}
+
+pre {
+  margin: 1.5em 0;
+}
+
+blockquote {
+  border-left: 4px solid $primary-color;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.875em;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 1.25em;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-top: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+  margin-top: 1.5em;
+}
+
+h6 {
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+figcaption {
+  color: lighten($black, 65%);
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin-bottom: 1.5em;
+}

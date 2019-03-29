@@ -1,0 +1,61 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+main {
+  @media #{map_get($query, medium)} {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 2em 1em;
+  text-align: left;
+  width: $content-width;
+
+  @media #{map_get($query, medium)} {
+    margin: 0;
+    padding: 0;
+    transform: translateX(-$nav-width / 2);
+  }
+}
+
+#app {
+
+  &::before {
+    background-color: rgba($black, .3);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: opacity .3s ease-out .3s;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    @media #{map_get($query, medium)} {
+      display: none;
+    }
+  }
+
+  &.active::before {
+    content: '';
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity .3s ease-out;
+  }
+}
